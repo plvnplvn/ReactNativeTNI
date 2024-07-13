@@ -7,12 +7,7 @@ const AppFooter = (): React.JSX.Element => {
   const isLogin = true;
   return (
     <View>
-      <Text style={styles.myText}>
-        {hello} Date:{new Date().toLocaleDateString()}
-      </Text>
-      {hello2}
-      {isLogin && <Text>Welcome Boss</Text>}
-      {isLogin ? <Text>Welcome Marry</Text> : <Text>ยังไม่ได้ล็อกอิน</Text>}
+    
     </View>
   );
 };
@@ -20,7 +15,19 @@ const AppFooter = (): React.JSX.Element => {
 export default AppFooter;
 
 const styles = StyleSheet.create({
-  myText: {
-    color: "red",
+  footer:{
+    backgroundColor:'#f8f8f8',
+    padding:20,
+    alignItems:'center',
+    justifyContent:'center',
+    position:'absolute',
+    left:0,
+    right:0,
+    bottom:0,
+  },
+  footerText:{
+    fontSize:16,
+    fontWeight:'bold',
+    color:'#333',
   },
 });

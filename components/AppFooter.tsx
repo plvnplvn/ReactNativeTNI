@@ -1,16 +1,17 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const AppFooter = (): React.JSX.Element => {
-  const hello = "Hello TNI Footer";
-  const hello2 = <Text>Hello JSX</Text>;
-  const isLogin = true;
+type AppHeaderProps ={
+    Message:string;
+
+}
+const AppFooter= ({Message}:AppHeaderProps):React.JSX.Element =>{
   return (
-    <View>
-    
+    <View style={styles.footer}>
+      <Text style={styles.footerText}>{Message}</Text>
     </View>
   );
-};
+}
 
 export default AppFooter;
 

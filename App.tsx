@@ -1,29 +1,13 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Button, Alert } from "react-native";
-import AppFooter from "./components/AppFooter";
-import AppHeader from "./components/AppHeader";
-import Content from "./components/Content";
-export default function App(): React.JSX.Element {
-  
+import { View, Text ,StyleSheet} from 'react-native'
+import React from 'react'
+import ProfileScreen from './components/ProfileScreen'
 
+const App = ():React.JSX.Element => {
   return (
-    <View style={styles.container}>
-      <AppFooter />
-      <AppHeader />
-      <Content Username="Patsakorn Chinplikanon" Message="Message from App.tsx"/>
-        
-  
-      
-
+    <View>
+      <ProfileScreen/>
     </View>
-  );
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+export default App

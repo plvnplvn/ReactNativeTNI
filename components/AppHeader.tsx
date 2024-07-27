@@ -8,13 +8,14 @@ type AppHeaderProps = {
 
 const AppHeader = ({Username,Message}:AppHeaderProps): React.JSX.Element =>{
   return (
-    <View>
-      
+    <View style={styles.header}>
+      <Text style={styles.headerText}>{Username}</Text>
+      <Text style={styles.subtitleText}>{Message}</Text>
     </View>
   )
 }
 
-export default AppHeader
+
 
 const styles = StyleSheet.create({
     header: {
@@ -33,3 +34,5 @@ const styles = StyleSheet.create({
         color: '#fff',
     },
 });
+
+export default AppHeader;

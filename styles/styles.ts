@@ -29,7 +29,10 @@ const styles = StyleSheet.create({
         fontSize:20,
         color:"#214761",
         fontWeight:"heavy",
+    },
+    buttonMargin:{
+        marginTop:10,
     }
 })
 
-export default styles
+export default styles;

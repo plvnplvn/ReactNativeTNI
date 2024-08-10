@@ -3,22 +3,23 @@ import React from "react";
 import { stylesPractice } from "../styles/styles";
 
 type ContentProp = {
-  fullName: string;
+  //fullName: string;
   message: string;
+  onButtonClick:() => void;
 };
-const Content = ({ fullName, message }: ContentProp) => {
-  const [displayFullname, setDisplayFullname] = React.useState("");
+const Content = ({ onButtonClick, message }: ContentProp) => {
+  //const [displayFullname, setDisplayFullname] = React.useState("");
 
-  const handleButtonClick = () =>{
-    setDisplayFullname(fullName);
-    Alert.alert("Hello",`Input your fullname : ${fullName}`);
-  };
+  //const handleButtonClick = () =>{
+    //setDisplayFullname(fullName);
+    //Alert.alert("Hello",`Input your fullname : ${fullName}`);
+  //};
 
   return (
     <View style={stylesPractice.content}>
       <Text style={stylesPractice.text}>{message}</Text>
-      <Text style={stylesPractice.text}>{displayFullname}</Text>
-      <Button title="CLICK ME" onPress={handleButtonClick} />
+      {/*<Text style={stylesPractice.text}>{displayFullname}</Text>*/}
+      <Button title="CLICK ME" onPress={onButtonClick} />
     </View>
   );
 };

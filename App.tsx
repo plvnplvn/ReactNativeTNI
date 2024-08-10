@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { View, TextInput } from "react-native";
+import { View, TextInput, Alert } from "react-native";
 import React, { useState, useEffect } from "react";
 import AppFooter from "./components/AppFooter";
 import AppHeader from "./components/AppHeader";
@@ -20,11 +20,17 @@ export default function App(): React.JSX.Element {
   useEffect(() => {
     console.log(`Fullname has changed to: ${fullname}`);
   }, [fullname]);
+
+  const handleButtonClick = () => {
+    Alert.alert("Hello", `Input your fullname : ${fullname}`);
+  };
+
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
       <AppHeader fullName={fullname} message={message} />
-      <Content message={message} fullName={fullname} />
+      {/* <Content message={message} fullname={fullname} /> */}
+      <Content message={message} onButtonClick={handleButtonClick}/>
       <AppFooter footerMessage={footerMessage} />
       <TextInput
         style={styles.input}

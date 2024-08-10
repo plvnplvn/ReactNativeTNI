@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     flex: 1,
     // justifyContent: "center",
     alignItems: "center",
-    padding: 16,
+    //padding: 16,
     backgroundColor: "#ffffff",
   },
   header: {
@@ -70,7 +70,7 @@ const stylesPractice = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginTop: 100,
-    width:1000,
+    width:'100%',
   },
   headerText: {
     fontSize: 20,

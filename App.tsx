@@ -1,17 +1,15 @@
-import { View, Text } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import ProfileScreen from './components/ProfileScreen'
-import UseEffectExample from './components/UseEffectExample'
-import Login from './components/Login'
+import FlatListExample from "./components/FlatListExample";
+import FlatListCallBackend from './components/FlatListCallBackend';
 
-
-const App = ():React.JSX.Element => {
+const App = () => {
   return (
     <View>
-      <ProfileScreen/>      
-      <Login/>
+      <FlatListCallBackend/>
     </View>
   )
 }
 
 export default App
+

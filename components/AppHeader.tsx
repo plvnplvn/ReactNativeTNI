@@ -21,22 +21,4 @@ const AppHeader = ({
   );
 };
 
-const styles = StyleSheet.create({
-  header: {
-    backgroundColor: "#AEC6CF",
-    padding: 20,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  headerText: {
-    fontSize: 20,
-    fontWeight: "bold",
-    color: "#fff",
-  },
-  subtitleText: {
-    fontSize: 16,
-    color: "#fff",
-  },
-});
-
 export default AppHeader;

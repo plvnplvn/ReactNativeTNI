@@ -24,15 +24,3 @@ const Content = ({ fullName, message }: ContentProp) => {
 };
 
 export default Content;
-
-const styles = StyleSheet.create({
-  content: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  text:{
-    fontSize:18,
-    marginBottom:20,
-  },
-});

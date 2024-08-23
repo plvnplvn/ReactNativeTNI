@@ -2,20 +2,66 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
+    alignItems: "center",
+    padding: 20,
+    
+    // backgroundColor: "#666", //Configuring background color
+  },
+
+  profileImage: {
+    borderRadius: 50,
+    width: 100,
+    height: 100,
+    marginRight: 20,
+    borderWidth: 1,
+    borderColor: "#000",
+  },
+
+  profileContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    width: "100%",
+    padding: 20,
+    borderRadius: 10,
+    backgroundColor: "white",
+    elevation: 5,
+    marginTop: 30,
+  },
+
+  //change name size, color, font weight
+  profileName: {
+    fontWeight: "bold",
+    fontSize: 20,
+    color: "#F00",
+  },
+});
+
+const stylesPractice = StyleSheet.create({
+  container: {
     flex: 1,
     // justifyContent: "center",
     alignItems: "center",
-    //padding: 16,
+    // padding: 16,
     backgroundColor: "#ffffff",
   },
+
+  /*Start of header style*/
   header: {
-    padding: 16,
-    backgroundColor: "#f8f8f8",
-    width: "100%",
+    backgroundColor: "#AEC6CF",
+    padding: 20,
     alignItems: "center",
     justifyContent: "center",
-    borderBottomWidth: 1,
-    borderBottomColor: "#ddd",
+    marginTop: 100,
+    width: "100%",
+  },
+  headerText: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#fff",
+  },
+  subtitleText: {
+    fontSize: 16,
+    color: "#fff",
   },
   fullname: {
     fontSize: 18,
@@ -27,59 +73,16 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#666",
   },
+
+  /*Start of content style*/
   content: {
-    padding: 16,
+    // flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#f9f9f9",
-    borderRadius: 8,
-    marginVertical: 16,
-    width: "90%",
   },
   text: {
-    fontSize: 16,
-    marginBottom: 8,
-    color: "#444",
-  },
-  footer: {
-    padding: 16,
-    backgroundColor: "#f8f8f8",
-    width: "100%",
-    alignItems: "center",
-    position: "absolute",
-    bottom: 0,
-    borderTopWidth: 1,
-    borderTopColor: "#ddd",
-  },
-  input: {
-    height: 40,
-    borderColor: "gray",
-    borderWidth: 1,
-    marginTop: 16,
-    paddingHorizontal: 8,
-    width: "80%",
-    borderRadius: 8,
-  },
-});
-
-const stylesPractice = StyleSheet.create({
-  /*Start of header style*/
-  header: {
-    backgroundColor: "#AEC6CF",
-    padding: 20,
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: 100,
-    width:'100%',
-  },
-  headerText: {
-    fontSize: 20,
-    fontWeight: "bold",
-    color: "#fff",
-  },
-  subtitleText: {
-    fontSize: 16,
-    color: "#fff",
+    fontSize: 18,
+    marginBottom: 20,
   },
 
   /*Start of footer style*/
@@ -98,16 +101,36 @@ const stylesPractice = StyleSheet.create({
     fontWeight: "bold",
     color: "#333",
   },
-
-  /*Start of content style*/
-  content: {
-    // flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  text: {
-    fontSize: 18,
-    marginBottom: 20,
+  input: {
+    height: 40,
+    borderColor: "gray",
+    borderWidth: 1,
+    marginTop: 16,
+    paddingHorizontal: 8,
+    width: "80%",
+    borderRadius: 8,
   },
 });
-export { styles, stylesPractice };
+
+const stylesLogin = StyleSheet.create({
+  container: {
+    justifyContent: "center",
+    padding: 20,
+    marginTop: 50,
+    backgroundColor: "#ffffff",
+    borderRadius: 10, 
+    elevation: 3,
+    width: "90%",
+  },
+  input: {
+    height: 45,
+    borderColor: "gray",
+    borderWidth: 1,
+    borderRadius: 8, 
+    marginBottom: 15,
+    paddingHorizontal: 15, 
+    backgroundColor: "#f9f9f9",
+  },
+});
+
+export { styles, stylesPractice, stylesLogin };

@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { Modal, View } from "react-native";
 import React from "react";
 import ProfileScreen from "./components/ProfileScreen";
 import UseEffectExample from "./components/UseEffectExample";
@@ -9,6 +9,8 @@ import AxiosgetData from "./components/AxiosgetData";
 import AxiosPostData from "./components/AxiosPostData";
 import WeatherLondon from "./components/WeatherLondon";
 import WeatherBangkok from "./components/WeatherBangkok";
+import ModalExample from "./components/ModalExample";
+import WeatherApp from "./components/WeatherApp";
 const App = ():React.JSX.Element => {
   return (
     <View>
@@ -17,7 +19,9 @@ const App = ():React.JSX.Element => {
       {/*<FlatListExample>*/}
       {/*<FlatListCallBackend>*/}
       {/*<NewsApp/>*/}
-      <WeatherBangkok/>
+      {/*<WeatherBangkok/>*/}
+      {/*<ModalExample/>*/}
+      <WeatherApp/>
     </View>
   );
 };

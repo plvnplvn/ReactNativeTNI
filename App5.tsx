@@ -11,7 +11,7 @@ import WeatherLondon from "./components/WeatherLondon";
 import WeatherBangkok from "./components/WeatherBangkok";
 import ModalExample from "./components/ModalExample";
 import WeatherApp from "./components/WeatherApp";
-import HomeScreen from "./screens/HomeScreen";
+import HomeScreen from "./screens/HomeScreen.tsx";
 import AboutScreen from "./screens/AboutScreen";
 const App = ():React.JSX.Element => {
   return (

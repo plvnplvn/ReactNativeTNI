@@ -1,4 +1,12 @@
-import { StyleSheet, Text, View, Alert, Modal, Pressable } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Alert,
+  Modal,
+  Pressable,
+  TouchableOpacity,
+} from "react-native";
 import React, { useState } from "react";
 import WeatherBangkok from "./WeatherBangkok";
 import WeatherLondon from "./WeatherLondon";
@@ -37,7 +45,9 @@ const WeatherApp = () => {
         visible={isModalVisible}
         onRequestClose={() => setModalVisible(!isModalVisible)}
       >
-        <View><WeatherLondon/></View>
+        <View>
+          <WeatherLondon />
+        </View>
       </Modal>
 
       <Pressable
@@ -53,7 +63,9 @@ const WeatherApp = () => {
         visible={isModalVisible}
         onRequestClose={() => setModalVisible(!isModalVisible)}
       >
-        <View><WeatherBangkok/></View>
+        <View>
+          <WeatherBangkok />
+        </View>
       </Modal>
     </View>
   );

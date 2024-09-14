@@ -11,29 +11,26 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import MenuScreen from "./screens/MenuScreen";
 import ProductScreen from "./screens/ProductScreen";
-
+import DetailScreen from "./screens/DetailScreen";
 const HomeStack = createNativeStackNavigator();
 const ProductStack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 
 function HomeStackScreen() {
   return (
-    <NavigationContainer>
-      <HomeStack.Navigator initialRouteName="Home"
+    <HomeStack.Navigator
+      initialRouteName="Home"
       screenOptions={{
-        headerStyle:{backgroundColor:'#20B2aa'},
-        headerTintColor:'white',
-        headerTitleStyle:{fontWeight:'bold'},
-        headerTitleAlign:'center',
-      }}>
-        <HomeStack.Screen 
-        name="Home" 
-        component={HomeScreen} 
-        options={{title:'หน้าหลัก'}}
-        />
-        <HomeStack.Screen 
-        name="About" 
-        component={AboutScreen} 
+        //headerStyle: { backgroundColor: "#1724FA" },
+        //headerTintColor: "white",
+        headerTitleStyle: { fontWeight: "bold" },
+        // headerShown: false,
+      }}
+    >
+      <HomeStack.Screen name="Home" component={HomeScreen} />
+      <HomeStack.Screen
+        name="About"
+        component={AboutScreen}
         options={{
           //   title: "เกี่ยวกับเรา",
           headerStyle: { backgroundColor: "#1724FA" },
@@ -56,6 +53,7 @@ function ProductStackScreen() {
       }}
     >
       <ProductStack.Screen name="Products" component={ProductScreen} />
+      <ProductStack.Screen name="Details" component={DetailScreen}/>
     </ProductStack.Navigator>
   );
 }
